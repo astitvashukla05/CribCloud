@@ -26,7 +26,7 @@ function NavBar() {
                 <Button variant="outline" className="text-white border-white bg-transparent hover:bg-white hover:text-primary-700 rounded-lg">SignUp</Button>
                 </Link>
                  <Link href={'/login'}>
-                <Button variant="outline" className="bg-secondary-600 hover:bg-white hover:text-primary-700 rounded-lg">logIn</Button>
+                <Button variant="outline" className="bg-secondary-600 hover:bg-secondary-700  hover:text-white rounded-lg">logIn</Button>
                 </Link>
               </div>
         </div>

@@ -1,8 +1,9 @@
 import React from 'react'
+import Herosection from './Herosection'
 
 function landing() {
   return (
-    <div className='bg-red-300'>helloo</div>
+    <div><Herosection/></div>
   )
 }
 
