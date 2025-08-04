@@ -110,7 +110,7 @@ export const PropertyTypeIcons = {
   Cottage: Trees,
 };
 
-export const NAVBAR_HEIGHT = 52; // in pixels
+export const NAVBAR_HEIGHT = 60; // in pixels
 
 // Test users for development
 export const testUsers = {
