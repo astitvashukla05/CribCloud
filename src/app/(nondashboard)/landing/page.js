@@ -3,6 +3,7 @@ import Herosection from './Herosection'
 import Features from './Features'
 import Discover from './Discover'
 import CallToActionSection from './CallToActionSection'
+import Footer from './Footer'
 
 function landing() {
   return (
@@ -11,6 +12,7 @@ function landing() {
       <Features/>
       <Discover/>
       <CallToActionSection/>
+      <Footer/>
     </div>
   )
 }
