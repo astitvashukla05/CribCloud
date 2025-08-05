@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import DiscoverCard from "./DiscoverCard";
+import DiscoverCard from "./mini-components/DiscoverCard";
 const containerVariant = {
   hidden: { opacity: 0 },
   visible: {

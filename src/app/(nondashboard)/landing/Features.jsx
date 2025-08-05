@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import { motion } from 'framer-motion'
-import FeatureCard from './FeatureCard';
+import FeatureCard from './mini-components/FeatureCard';
 const containerVariant={
     hidden:{opacity:0,y:50},
     visible:{
