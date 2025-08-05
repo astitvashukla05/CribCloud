@@ -16,7 +16,7 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
 };
-function Discover() {
+export default function Discover() {
   return (
     <motion.div
       initial="hidden"
@@ -75,4 +75,3 @@ function Discover() {
   );
 }
 
-export default Discover;

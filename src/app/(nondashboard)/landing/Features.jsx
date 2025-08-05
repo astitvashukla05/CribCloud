@@ -18,7 +18,7 @@ const itemVariants={
     visible:{opacity:1,y:0}
 
 };
-function Features() {
+export default function Features() {
   return (
     <motion.div initial="hidden" whileInView="visible"
      viewport={{once:true}}
@@ -51,5 +51,3 @@ function Features() {
   )
 }
 
-
-export default Features

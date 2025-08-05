@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function FeatureCard({imageSrc, title, description,linkText, linkHref}) {
+export default  function FeatureCard({imageSrc, title, description,linkText, linkHref}) {
   return (
     <div className='text-center'>
         <div className='p-4 rounded-lg mb-4 flex items-center justify-center h-48'>
@@ -15,5 +15,3 @@ function FeatureCard({imageSrc, title, description,linkText, linkHref}) {
     </div>
   )
 }
-
-export default FeatureCard

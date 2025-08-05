@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import React from 'react'
 
-function DiscoverCard({imageSrc, title, description}) {
+export default function DiscoverCard({imageSrc, title, description}) {
   return (
     <div className='px-4 py-12 shadow-lg rounded-lg  bg-primary-50 md:h-72 text-center'>
         <div className='bg-primary-700 p-[0.6rem] rounded-full mb-4 h-10 w-10 mx-auto'>
@@ -14,4 +14,3 @@ function DiscoverCard({imageSrc, title, description}) {
   )
 }
 
-export default DiscoverCard
