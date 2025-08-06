@@ -1,0 +1,41 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+  "start": "node src/index.js",
+  "dev": "nodemon src/index.js",
+  "seed": "node prisma/seed.js",
+  "prisma:generate": "prisma generate",
+  "prisma:migrate": "prisma migrate dev"
+},
+
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.859.0",
+    "@aws-sdk/lib-storage": "^3.859.0",
+    "@prisma/client": "^6.13.0",
+    "@terraformer/wkt": "^2.2.1",
+    "axios": "^1.11.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.1",
+    "multer": "^2.0.2",
+    "prisma": "^6.13.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "nodemon": "^3.1.10",
+    "rimraf": "^6.0.1",
+    "shx": "^0.4.0"
+  }
+}
