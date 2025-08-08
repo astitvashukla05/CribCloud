@@ -1,13 +1,13 @@
-
+import Navbar from "@/components/Navbar";
+import Landing from "./(nondashboard)/landing/page";
 
 export default function Home() {
   return (
-    
-
-    <main className="flex min-h-screen items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-black-600">
-        Tailwind is Working! 🚀
-      </h1>
-    </main>
+    <div className="h-full w-full">
+      <Navbar />
+      <main className={`h-full flex w-full flex-col`}>
+        <Landing />
+      </main>
+    </div>
   );
 }
