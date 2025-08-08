@@ -2,6 +2,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import DiscoverCard from "./mini-components/DiscoverCard";
+import discoverCardsData from "../../../utils/discoverCardsData.js";
 const containerVariant = {
   hidden: { opacity: 0 },
   visible: {
@@ -41,32 +42,13 @@ export default function Discover() {
           </p>
         </motion.div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 xl:gap-16">
-          {[
-            {
-              imageSrc: "/landing-icon-wand.png",
-              title: "Search Properties",
-              description:
-                "Browse through a wide range of properties available for rent.",
-            },
-            {
-              imageSrc: "/landing-icon-calendar.png",
-              title: "Book your place",
-              description:
-                "Once you've found the perfect rental property, easily book it online with just a few clicks.",
-            },
-            {
-              imageSrc: "/landing-icon-heart.png",
-              title: "Enjoy your New Home",
-              description:
-                "Move into your new rental property and start enjoying your dream home.",
-            },
-          ].map((card,index)=>(
+          {discoverCardsData.map((card, index) => (
             <motion.div key={index} variants={itemVariants}>
-                <DiscoverCard
-                    imageSrc={card.imageSrc}
-                    title={card.title}
-                    description={card.description}
-                />
+              <DiscoverCard
+                imageSrc={card.imageSrc}
+                title={card.title}
+                description={card.description}
+              />
             </motion.div>
           ))}
         </div>
@@ -74,4 +56,3 @@ export default function Discover() {
     </motion.div>
   );
 }
-
