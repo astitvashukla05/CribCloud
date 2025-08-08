@@ -50,12 +50,12 @@ export default function Footer() {
                       
                 </div>
             </div>
-            <dic className='mt-8 text-center text-gray-500 flex justify-center space-x-4'>
+            <div className='mt-8 text-center text-gray-500 flex justify-center space-x-4'>
                 <span>© {new Date().getFullYear()} CRIBCLOUD. All rights reserved.</span>
                 <Link href='/privacy' >Privacy Policy</Link>
                 <Link href='/terms' >Terms of Service</Link>
                 <Link href='/cookies' >Cookie Policy</Link>
-            </dic>
+            </div>
         </div>
     </footer>
   )
