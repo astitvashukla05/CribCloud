@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Crib Cloud",
   description: "A modern, open-source, and self-hosted alternative to Notion",
+  icons: {
+    icon: "/logo.svg", // or .png
+  },
 };
 
 export default function RootLayout({ children }) {
